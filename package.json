@@ -62,8 +62,11 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "jquery": "^3.5.0",
-    "normalize.css": "^8.0.1"
+    "js-datepicker": "^5.18.0",
+    "normalize.css": "^8.0.1",
+    "swiper": "^6.5.0"
   },
   "editorconfig-cli": [
     "*.json",

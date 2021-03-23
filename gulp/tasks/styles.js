@@ -20,7 +20,7 @@ module.exports = function styles() {
         }
       ]
     }))
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer({
       cascade: false
@@ -32,8 +32,8 @@ module.exports = function styles() {
     }, details => {
       console.log(`${details.name}: Original size:${details.stats.originalSize} - Minified size: ${details.stats.minifiedSize}`)
     }))
-    .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
+    // .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('build/css'))
 }
 
